@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pytest = "*"
+requests-mock = "*"
+black = "*"
+isort = "*"
+flake8 = "*"
+bandit = "*"
+coveralls = "*"
+pytest-cov = "*"
+mypy = "*"
+types-requests = "*"
+moto = "*"
+
+[packages]
+requests = "*"
+click = "*"
+typing-extensions = "*"
+defusedxml = "*"
+smart-open = {extras = ["s3"], version = "*"}
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+podload = "python -c \"from podload.cli import main; main()\""
